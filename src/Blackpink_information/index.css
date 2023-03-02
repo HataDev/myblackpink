@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.information{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Toan bo phan header*/
+.information_header{
+    height: 450px;
+    width: 50%;
+    background-color: aliceblue;
+    position: relative;
+}
+/*Xu ly anh img*/
+.information_header--img img{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+    padding: 15px;
+}
+/*Xu ly text*/
+.information_header--text{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 40%;
+}
+.information_header--text h1{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: serif;
+    margin-top: 110px;
+    margin-left: 26%;
+}
+.information_header--text p{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 16%;
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: serif;
+    text-align: justify;
+}
+.information_header--text p::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 60%;
+    background-color: pink;
+    bottom: -20px;
+    right: 0;
+}
+/*Xu ly phan hieu ung nam tren img va text*/
+.information_header--box{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    margin-top: 180px;
+    background-color: pink;
+    opacity: 0.3;
+}
+
+
+/*Xu ly phan content*/
+.information_content{
+    height: 200px;
+    width: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+/*Tieu su*/
+.information_content--ts{
+    height: 100%;
+    width: 3%;
+    background-color: pink;
+    opacity: 0.8;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: serif;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+.information_content--tslist{
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.information_content--tslist::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 6px;
+    background-color: purple;
+    border-radius: 5px;
+}
+.information_content--tslist li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*BLACKPINK*/
+.information_content--bk{
+    height: 100%;
+    width: 3%;
+    margin-left: 10px;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: serif;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+.information_content--bklist{
+    height: 100%;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.information_content--bklist::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 6px;
+    background-color: purple;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.information_content--bklist li{
+    margin-left: 18px;
+    margin-right: 10%;
+}
+
+
+/*Xu ly phan Footter*/
+.information_footter{
+    height: 230px;
+    width: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 10px solid pink;;
+}
+/*Giai thuong*/
+.information_footter--giaithuong{
+    height: 100%;
+    width: 3%;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: serif;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+/*Danh sach giai thuong*/
+.information_footter--giaithuonglist{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 100%;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.information_footter--giaithuonglist::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 6px;
+    background-color: purple;
+    border-radius: 5px;
+}
+.information_footter--giaithuonglist li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*Chu ky*/
+.information_footter--chuky{
+    height: 100%;
+    width: 3%;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: serif;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+/*Anh chu ky*/
+.information_footter--chukykimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.information_footter--chukykimg::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 6px;
+    background-color: purple;
+    border-radius: 5px;
+}
+.information_footter--chukykimg img{
+    padding: 25px;
+    height: 90%;
+    object-fit: cover;
+}

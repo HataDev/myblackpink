@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tao ra 1 flex chinh giua, height = view height*/
+.Blackpink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.Blackpink_backVideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* @media(min-aspect-ratio: 16/9) {
+    .Blackpink_backVideo{
+        width: 100%;
+        height: auto;
+    } 
+    .Blackpink_coating{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .Blackpink_backVideo{
+        width: auto;
+        height: 100%;
+    } 
+    .Blackpink_coating{
+        width: auto;
+        height: 100%;
+    }
+} */
+.Blackpink_coating{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    opacity: 0.9;
+}
+
+
+/*Xu ly cac the div o day*/
+.Blackpink_member{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+}
+
+/*Kich thuoc anh hien thi*/
+.Blackpink_member div img{
+    height: 350px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid rgb(255, 192, 203, 0.3);
+}
+
+/* .Blackpink_member div img::after :hover{
+    border-left: 5px solid liner-gradien(0deg, pink, 50%);
+    border-right: 5px solid liner-gradien(0deg, pink, 50%);
+    animation: imgHover 1s infinite linear;
+}
+
+@keyframes imgHover {
+    to{
+        transform: rotate(360deg);
+    } 
+} */
+
+
+/*Hover anh*/
+.Blackpink_member div img:hover{
+    transform: translateY(-50px);
+    transition: 0.6s;
+}
